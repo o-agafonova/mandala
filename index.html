@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Одностраничный сайт с мандалой</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+        .mandala {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background: url('path_to_your_mandala_image') no-repeat center/contain;
+        }
+        .mandala .petal {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .mandala .petal1 { top: 10%; left: 45%; }
+        .mandala .petal2 { top: 30%; left: 80%; }
+        .mandala .petal3 { top: 65%; left: 75%; }
+        .mandala .petal4 { top: 85%; left: 40%; }
+        .mandala .petal5 { top: 65%; left: 10%; }
+        .mandala .petal6 { top: 30%; left: 5%; }
+        .mandala .petal7 { top: 10%; left: 45%; }
+        .mandala .petal8 { top: 30%; left: 80%; }
+        /* Add more styles for each petal as needed */
+    </style>
+</head>
+<body>
+    <div class="mandala">
+        <div class="petal petal1" onclick="window.location.href='page1.html'"></div>
+        <div class="petal petal2" onclick="window.location.href='page2.html'"></div>
+        <div class="petal petal3" onclick="window.location.href='page3.html'"></div>
+        <div class="petal petal4" onclick="window.location.href='page4.html'"></div>
+        <div class="petal petal5" onclick="window.location.href='page5.html'"></div>
+        <div class="petal petal6" onclick="window.location.href='page6.html'"></div>
+        <div class="petal petal7" onclick="window.location.href='page7.html'"></div>
+        <div class="petal petal8" onclick="window.location.href='page8.html'"></div>
+        <!-- Add more petal divs as needed -->
+    </div>
+</body>
+</html>

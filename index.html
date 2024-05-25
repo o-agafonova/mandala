@@ -22,32 +22,43 @@
         }
         .mandala .petal {
             position: absolute;
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
-        .mandala .petal1 { top: 10%; left: 45%; }
-        .mandala .petal2 { top: 30%; left: 80%; }
+        .mandala .petal:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .mandala .petal1 { top: 15%; left: 45%; }
+        .mandala .petal2 { top: 35%; left: 75%; }
         .mandala .petal3 { top: 65%; left: 75%; }
-        .mandala .petal4 { top: 85%; left: 40%; }
-        .mandala .petal5 { top: 65%; left: 10%; }
-        .mandala .petal6 { top: 30%; left: 5%; }
-        .mandala .petal7 { top: 10%; left: 45%; }
-        .mandala .petal8 { top: 30%; left: 80%; }
-        /* Add more styles for each petal as needed */
+        .mandala .petal4 { top: 85%; left: 45%; }
+        .mandala .petal5 { top: 65%; left: 15%; }
+        .mandala .petal6 { top: 35%; left: 15%; }
+        .mandala .petal7 { top: 5%; left: 25%; }
+        .mandala .petal8 { top: 5%; left: 65%; }
+        .mandala .petal span {
+            font-size: 14px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="mandala">
-        <div class="petal petal1" onclick="window.location.href='page1.html'"></div>
-        <div class="petal petal2" onclick="window.location.href='page2.html'"></div>
-        <div class="petal petal3" onclick="window.location.href='page3.html'"></div>
-        <div class="petal petal4" onclick="window.location.href='page4.html'"></div>
-        <div class="petal petal5" onclick="window.location.href='page5.html'"></div>
-        <div class="petal petal6" onclick="window.location.href='page6.html'"></div>
-        <div class="petal petal7" onclick="window.location.href='page7.html'"></div>
-        <div class="petal petal8" onclick="window.location.href='page8.html'"></div>
-        <!-- Add more petal divs as needed -->
+        <div class="petal petal1" onclick="window.location.href='page1.html'"><span>Вкладка 1</span></div>
+        <div class="petal petal2" onclick="window.location.href='page2.html'"><span>Вкладка 2</span></div>
+        <div class="petal petal3" onclick="window.location.href='page3.html'"><span>Вкладка 3</span></div>
+        <div class="petal petal4" onclick="window.location.href='page4.html'"><span>Вкладка 4</span></div>
+        <div class="petal petal5" onclick="window.location.href='page5.html'"><span>Вкладка 5</span></div>
+        <div class="petal petal6" onclick="window.location.href='page6.html'"><span>Вкладка 6</span></div>
+        <div class="petal petal7" onclick="window.location.href='page7.html'"><span>Вкладка 7</span></div>
+        <div class="petal petal8" onclick="window.location.href='page8.html'"><span>Вкладка 8</span></div>
     </div>
 </body>
 </html>
